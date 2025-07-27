@@ -1,0 +1,205 @@
+---
+layout: default
+---
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">{{ site.data.site.hero.title }}</h1>
+                <p class="hero-subtitle">{{ site.data.site.hero.subtitle }}</p>
+                <div class="hero-actions">
+                    <a href="/services/" class="btn btn-primary">{{ site.data.site.hero.cta_primary }}</a>
+                    <a href="/contact/" class="btn btn-secondary">{{ site.data.site.hero.cta_secondary }}</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="{{ site.data.site.hero.image | relative_url }}" alt="{{ site.author.name }}" class="hero-img">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Stats Section -->
+<section class="stats">
+    <div class="container">
+        <div class="stats-grid">
+            {% for stat in site.data.site.stats %}
+            <div class="stat-item">
+                <div class="stat-number">{{ stat.number }}</div>
+                <div class="stat-label">{{ stat.label }}</div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="about-preview">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">About Ivan</h2>
+            <p class="section-subtitle">A journey of innovation, leadership, and transformation across two decades</p>
+        </div>
+        
+        <div class="about-content">
+            <div class="about-text">
+                <p>{{ site.author.bio }}</p>
+                <p>With expertise spanning artificial intelligence integration, cross-cultural team management, and strategic digital transformation, Ivan has consistently delivered exceptional results for organizations ranging from innovative startups to Fortune 500 enterprises.</p>
+                <a href="/about/" class="btn btn-outline">Learn More About Ivan</a>
+            </div>
+            <div class="about-image">
+                <img src="/assets/images/office-workspace.jpg" alt="Professional workspace" class="about-img">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Preview -->
+<section class="services-preview">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Professional Services</h2>
+            <p class="section-subtitle">Comprehensive solutions for project management, digital transformation, and organizational growth</p>
+        </div>
+        
+        <div class="services-grid">
+            {% for service in site.services limit:3 %}
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        {% case service.icon %}
+                        {% when 'strategy' %}
+                            <path d="M9 11H5a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2z"></path>
+                            <path d="M19 4H15a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"></path>
+                        {% when 'transformation' %}
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                            <polyline points="3.27,6.96 12,12.01 20.73,6.96"></polyline>
+                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                        {% when 'consulting' %}
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        {% else %}
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12,6 12,12 16,14"></polyline>
+                        {% endcase %}
+                    </svg>
+                </div>
+                <h3 class="service-title">{{ service.title }}</h3>
+                <p class="service-description">{{ service.excerpt | strip_html | truncate: 120 }}</p>
+                <a href="{{ service.url | relative_url }}" class="service-link">Learn More</a>
+            </div>
+            {% endfor %}
+        </div>
+        
+        <div class="section-cta">
+            <a href="/services/" class="btn btn-primary">View All Services</a>
+        </div>
+    </div>
+</section>
+
+<!-- Speaking Preview -->
+<section class="speaking-preview">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Speaking Engagements</h2>
+            <p class="section-subtitle">International presentations on project management, AI, and digital transformation</p>
+        </div>
+        
+        <div class="speaking-stats">
+            <div class="speaking-stat">
+                <div class="speaking-number">50+</div>
+                <div class="speaking-label">Speaking Events</div>
+            </div>
+            <div class="speaking-stat">
+                <div class="speaking-number">15+</div>
+                <div class="speaking-label">Countries</div>
+            </div>
+            <div class="speaking-stat">
+                <div class="speaking-number">4.8/5</div>
+                <div class="speaking-label">Average Rating</div>
+            </div>
+        </div>
+        
+        <div class="speaking-topics">
+            <h3 class="topics-title">Core Speaking Topics</h3>
+            <div class="topics-grid">
+                <div class="topic-card">
+                    <h4 class="topic-title">Project Management 4.0</h4>
+                    <p class="topic-description">The AI Revolution in Project Management</p>
+                </div>
+                <div class="topic-card">
+                    <h4 class="topic-title">Digital Transformation</h4>
+                    <p class="topic-description">Leadership in Technology-Driven Change</p>
+                </div>
+                <div class="topic-card">
+                    <h4 class="topic-title">Cultural Intelligence</h4>
+                    <p class="topic-description">Managing Global Project Teams</p>
+                </div>
+                <div class="topic-card">
+                    <h4 class="topic-title">Future of Work</h4>
+                    <p class="topic-description">Human-AI Collaboration</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section-cta">
+            <a href="/speaking/" class="btn btn-primary">View Speaking Portfolio</a>
+        </div>
+    </div>
+</section>
+
+<!-- Latest Articles -->
+<section class="articles-preview">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Latest Articles</h2>
+            <p class="section-subtitle">Insights on project management, AI, digital transformation, and leadership</p>
+        </div>
+        
+        <div class="articles-grid">
+            {% for post in site.posts limit:3 %}
+            <article class="article-card">
+                {% if post.image %}
+                <div class="article-image">
+                    <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="article-img">
+                </div>
+                {% endif %}
+                <div class="article-content">
+                    <div class="article-meta">
+                        <span class="article-category">{{ post.category }}</span>
+                        <span class="article-date">{{ post.date | date: "%B %d, %Y" }}</span>
+                    </div>
+                    <h3 class="article-title">
+                        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                    </h3>
+                    <p class="article-excerpt">{{ post.excerpt | strip_html | truncate: 120 }}</p>
+                    <div class="article-footer">
+                        <span class="article-read-time">{{ post.read_time | default: "5 min read" }}</span>
+                        <a href="{{ post.url | relative_url }}" class="article-link">Read More</a>
+                    </div>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+        
+        <div class="section-cta">
+            <a href="/blog/" class="btn btn-primary">View All Articles</a>
+        </div>
+    </div>
+</section>
+
+<!-- Contact CTA -->
+<section class="contact-cta">
+    <div class="container">
+        <div class="cta-content">
+            <h2 class="cta-title">Ready to transform your next project?</h2>
+            <p class="cta-subtitle">Let's discuss how we can work together to achieve your goals.</p>
+            <a href="/contact/" class="btn btn-primary btn-large">Get in Touch</a>
+        </div>
+    </div>
+</section>
+

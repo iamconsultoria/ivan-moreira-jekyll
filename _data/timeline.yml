@@ -1,0 +1,56 @@
+# Career Timeline Data
+- year: "2020-Present"
+  title: "Senior Program Manager"
+  company: "Global Tech Solutions"
+  location: "Remote/Global"
+  description: "Leading digital transformation initiatives across multiple international markets, specializing in AI integration and cross-cultural project management."
+  achievements:
+    - "Managed $50M+ digital transformation portfolio across 8 countries"
+    - "Implemented AI-driven project management frameworks reducing delivery time by 35%"
+    - "Led cross-cultural teams of 150+ professionals across 4 continents"
+    - "Achieved 98% project success rate with zero budget overruns"
+
+- year: "2017-2020"
+  title: "Digital Transformation Consultant"
+  company: "Innovation Partners Ltd"
+  location: "London, UK"
+  description: "Specialized consultant helping Fortune 500 companies navigate digital transformation challenges and implement cutting-edge project management methodologies."
+  achievements:
+    - "Consulted for 25+ Fortune 500 companies across Europe and Americas"
+    - "Developed proprietary PM 4.0 methodology adopted by 12 organizations"
+    - "Delivered 150+ training sessions to C-level executives"
+    - "Generated $15M+ in measurable client value through process optimization"
+
+- year: "2014-2017"
+  title: "Program Manager"
+  company: "TechCorp International"
+  location: "São Paulo, Brazil"
+  description: "Managed large-scale technology implementations and led the company's expansion into Latin American markets."
+  achievements:
+    - "Successfully launched operations in 6 Latin American countries"
+    - "Managed technology rollout affecting 50,000+ end users"
+    - "Reduced operational costs by 28% through process reengineering"
+    - "Built and led a team of 45 project managers and analysts"
+
+- year: "2010-2014"
+  title: "Senior Project Manager"
+  company: "Global Systems Inc"
+  location: "Bucharest, Romania"
+  description: "Led complex IT infrastructure projects and established project management best practices across Eastern European operations."
+  achievements:
+    - "Delivered 35+ critical infrastructure projects on time and budget"
+    - "Established PMO serving 200+ project stakeholders"
+    - "Achieved PMP certification and trained 50+ team members"
+    - "Reduced project failure rate from 25% to 3% through improved methodologies"
+
+- year: "2005-2010"
+  title: "Project Manager"
+  company: "StartupTech Solutions"
+  location: "Various Locations"
+  description: "Early career focused on learning project management fundamentals while working with innovative technology startups."
+  achievements:
+    - "Managed 20+ software development projects"
+    - "Gained experience in Agile, Waterfall, and hybrid methodologies"
+    - "Built foundation in cross-functional team leadership"
+    - "Developed expertise in stakeholder management and communication"
+

@@ -1,0 +1,49 @@
+# Site Configuration Data
+navigation:
+  - name: "Home"
+    url: "/"
+  - name: "About"
+    url: "/about/"
+  - name: "Services"
+    url: "/services/"
+  - name: "Speaking"
+    url: "/speaking/"
+  - name: "Blog"
+    url: "/blog/"
+  - name: "Contact"
+    url: "/contact/"
+
+hero:
+  title: "Transforming complex challenges into strategic success"
+  subtitle: "Senior Program Manager and Digital Transformation Advisor with 20+ years of experience in project management, AI integration, and international speaking across 15+ countries."
+  cta_primary: "Explore Services"
+  cta_secondary: "Get in Touch"
+  image: "/assets/images/profile-headshot.jpg"
+
+stats:
+  - number: "20+"
+    label: "Years Experience"
+  - number: "50+"
+    label: "Speaking Events"
+  - number: "15+"
+    label: "Countries"
+  - number: "4.8/5"
+    label: "Average Rating"
+
+contact:
+  email: "ivan@ivanmoreira.org"
+  location: "Global"
+  phone: "+1 (555) 123-4567"
+
+social:
+  linkedin: "https://linkedin.com/in/ivanmoreira"
+  twitter: "https://twitter.com/ivanmoreira"
+  github: "https://github.com/ivanmoreira"
+  email: "mailto:ivan@ivanmoreira.org"
+
+newsletter:
+  title: "Stay Updated"
+  description: "Get the latest insights on project management, AI, and digital transformation"
+  placeholder: "Your email address"
+  button: "Subscribe"
+

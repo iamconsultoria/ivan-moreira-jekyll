@@ -1,0 +1,114 @@
+# Ivan Moreira - Professional Website
+# Jekyll Configuration
+
+title: Ivan Moreira
+email: ivan@ivanmoreira.org
+description: >-
+  Senior Program Manager and Digital Transformation Advisor with 20+ years of experience 
+  in project management, AI integration, and international speaking across 15+ countries.
+baseurl: ""
+url: ""
+
+# Author information
+author:
+  name: Ivan Moreira
+  title: Senior Program Manager & Digital Transformation Advisor
+  bio: >-
+    Senior Program Manager and Digital Transformation Advisor with 20+ years of experience 
+    in project management, AI integration, and international speaking across 15+ countries.
+  location: "Global"
+  email: ivan@ivanmoreira.org
+  linkedin: ivanmoreira
+  twitter: ivanmoreira
+  github: ivanmoreira
+
+# Social media
+social:
+  linkedin: ivanmoreira
+  twitter: ivanmoreira
+  github: ivanmoreira
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Collections
+collections:
+  services:
+    output: true
+    permalink: /:collection/:name/
+  speaking:
+    output: true
+    permalink: /:collection/:name/
+  timeline:
+    output: false
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Ivan Moreira"
+  - scope:
+      path: ""
+      type: "services"
+    values:
+      layout: "service"
+  - scope:
+      path: ""
+      type: "speaking"
+    values:
+      layout: "speaking"
+
+# Pagination
+paginate: 6
+paginate_path: "/blog/page:num/"
+
+# Markdown settings
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Sass settings
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Exclude from processing
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - LICENSE.txt
+
+# Include files
+include:
+  - _pages
+
+# SEO settings
+google_analytics: # Add your Google Analytics ID here
+google_site_verification: # Add your Google Site Verification code here
+
+# Contact form settings (for Cloudflare Workers integration)
+contact_form:
+  endpoint: "/api/contact"
+  
+# Newsletter settings
+newsletter:
+  endpoint: "/api/newsletter"
+
